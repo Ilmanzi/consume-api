@@ -18,7 +18,7 @@ export default function LandingPage() {
                     </div>
                 </div>
                 {/* Contain 1 or header*/}
-                <div class="bg-cover bg-center z-0" style={{ backgroundImage: 'url("src/assets/Background Section 1.jpg")' }}>
+                <div class="bg-cover bg-center h-[750px] z-0" style={{ backgroundImage: 'url("src/assets/Background Section 1.jpg")' }}>
                     <div class="flex flex-col">
                         {/* moving image */}
                         <img class="mx-auto w-[424px] h-[268px] top-40 moving-image z-0 " src="/src/assets/Image Hero Section 1.png" />
@@ -47,19 +47,29 @@ export default function LandingPage() {
                     </div>
                 </div>
                 {/* contain 2 */}
-                <div class="bg-cover bg-center h-screen z-0" style={{ backgroundImage: 'url("src/assets/Background Section 2.jpg")' }}>
+                <div class="bg-cover bg-center h-[750px] z-0" style={{ backgroundImage: 'url("src/assets/Background Section 2.jpg")' }}>
                     <div class="flex flex-col items-center">
                         {/* text content */}
-                        <div class="text-white merriweather-text text-center m-6 mt-16 text-lg">Experience the game with the best action, amazing characters and unforgettable experiences
+                        <div class="text-white merriweather-text text-center m-6 mt-20 text-lg">Experience the game with the best action, amazing characters and unforgettable experiences
                         </div>
-                            {/* background and youtube video */}
+                        {/* background and youtube video */}
                         <div class="relative">
                             <img class="mx-auto w-[360px] h-[208px]" src="/src/assets/Video Background.png" />
                             <div class="absolute left-10 bottom-3">
                                 <YoutubeVideo></YoutubeVideo>
                             </div>
                         </div>
-                        <img class="w-[328px] h-[234px] m-8" src="/src/assets/Image Hero Section 2.png"></img>
+                        {/* hero image */}
+                        <img class="w-[328px] h-[234px] mt-11" src="/src/assets/Image Hero Section 2.png"></img>
+                    </div>
+                </div>
+                {/* contain 3 */}
+                <div class="bg-cover bg-center h-[750px] z-0" style={{ backgroundImage: 'url("src/assets/Background Section 3.jpg")' }}>
+                    {/* text */}
+                    <div class="text-right text-5xl pt-24 metalmania-text text-white tracking-widest mr-7">
+                        Character Class
+                    </div>
+                    <div class="flex flex-col items-center">
                     </div>
                 </div>
             </div>
