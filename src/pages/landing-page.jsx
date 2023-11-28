@@ -51,8 +51,8 @@ export default function LandingPage() {
                     <div class="flex flex-col items-center">
                         {/* text content */}
                         <div class="text-white merriweather-text text-center m-6 mt-16 text-lg">Experience the game with the best action, amazing characters and unforgettable experiences
-                            {/* background and youtube video */}
                         </div>
+                            {/* background and youtube video */}
                         <div class="relative">
                             <img class="mx-auto w-[360px] h-[208px]" src="/src/assets/Video Background.png" />
                             <div class="absolute left-10 bottom-3">
