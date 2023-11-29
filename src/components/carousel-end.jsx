@@ -31,6 +31,8 @@ class CarouselContent extends Component {
                     infiniteLoop={true}
                     showArrows={false}
                     showStatus={false}
+                    autoPlay={true}
+                    interval={5000}
                     renderIndicator={(onClickHandler, isSelected) => (
                         <CustomIndicator
                             onClickHandler={onClickHandler}
