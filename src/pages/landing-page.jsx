@@ -1,3 +1,4 @@
+import CarouselContent3 from "../components/carousel"
 import YoutubeVideo from "../components/youtube"
 
 export default function LandingPage() {
@@ -64,12 +65,16 @@ export default function LandingPage() {
                     </div>
                 </div>
                 {/* contain 3 */}
-                <div class="bg-cover bg-center h-[750px] z-0" style={{ backgroundImage: 'url("src/assets/Background Section 3.jpg")' }}>
+                <div class="bg-cover bg-center h-[896px] z-0" style={{ backgroundImage: 'url("src/assets/Background Section 3.jpg")' }}>
                     {/* text */}
-                    <div class="text-right text-5xl pt-24 metalmania-text text-white tracking-widest mr-7">
+                    <div class="text-right text-5xl pt-20 metalmania-text text-white tracking-widest mr-7">
                         Character Class
                     </div>
-                    <div class="flex flex-col items-center">
+                    <div>
+                        {/* char carousel */}
+                        <div>
+                            <CarouselContent3></CarouselContent3>
+                        </div>
                     </div>
                 </div>
             </div>
