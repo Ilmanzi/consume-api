@@ -1,5 +1,6 @@
 import CarouselContent3 from "../components/carousel"
 import YoutubeVideo from "../components/youtube"
+import CarouselContent from "../components/carousel-end"
 
 export default function LandingPage() {
 
@@ -76,6 +77,15 @@ export default function LandingPage() {
                             <CarouselContent3></CarouselContent3>
                         </div>
                     </div>
+                </div>
+                <div class="bg-cover bg-center h-[593px] z-0" style={{ backgroundImage: 'url("src/assets/Background Section 4.jpg")' }}>
+                    <div class="metalmania-text text-center text-white tracking-widest pt-[70px] text-5xl">
+                        FEATURE
+                    </div>
+                    <div>
+                        <CarouselContent></CarouselContent>
+                    </div>
+
                 </div>
             </div>
         </>
