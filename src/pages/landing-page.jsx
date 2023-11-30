@@ -30,7 +30,7 @@ export default function LandingPage() {
                     </div>
                 </div>
                 {/* Content 1 or header*/}
-                <div class="bg-cover bg-center h-[750px] z-0" style={{ backgroundImage: 'url("src/assets/Background Section 1.jpg")' }}>
+                <div class="bg-cover bg-center h-[750px] z-0" style={{ backgroundImage: 'url("./src/assets/Background Section 1.jpg")' }}>
                     <div class="flex flex-col lg:flex-row-reverse lg:pt-[48px] lg:ml-[100px]">
                         {/* moving image */}
                         <img class="mx-auto w-[424px] h-[268px] top-40 moving-image z-0 lg:h-[400px] lg:w-[650px]" src="/src/assets/Image Hero Section 1.png" />
