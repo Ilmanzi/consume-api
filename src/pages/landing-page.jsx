@@ -86,7 +86,7 @@ export default function LandingPage() {
                         FEATURE
                     </div>
                     {/* carousel */}
-                    <div class="lg:px-[100px]">
+                    <div class=" lg:w-[900px] mx-auto">
                         <CarouselContent></CarouselContent>
                     </div>
 
@@ -95,17 +95,15 @@ export default function LandingPage() {
                 <div class="bg-cover bg-center bg-black h-[500px] z-0 lg:h-[200px]">
                     <div class="flex flex-col lg:flex-row justify-between pt-[80px] relative lg:h-[50px]">
                         {/* logo & copyright */}
-                        <div class="lg:flex lg:flex-row text-center">
+                        <div class="lg:flex lg:flex-row text-center lg:ml-10">
                             <div class="flex justify-center">
                                 <img class="w-10 h-10 lg:w-16 lg:h-16" src="/src/assets/favicon.png" alt="" />
                             </div>
-                            <div class="lg:text-left lg:flex lg:flex-col lg:content-start">
-                                <div class="text-white text-[12px] merriweather-text pt-5">© 2022 EXTRALIVE ENTERTAINMENT.</div>
+                            <div class="lg:text-left lg:flex lg:flex-col lg:ml-2 lg:mt-2">
+                                <div class="text-white text-[12px] merriweather-text pt-5 lg:pt-0">© 2022 EXTRALIVE ENTERTAINMENT.</div>
                                 <a href="https://immortal.gamesxtra.net/privacy-policy.php">
                                     <div class="text-white merriweather-text text-[12px] pt-3">Privacy Policy</div>
                                 </a>
-
-
                             </div>
                         </div>
                         {/* char footer */}
@@ -113,7 +111,7 @@ export default function LandingPage() {
                             <img class="" src="/src/assets/Character Footer.png" alt="" />
                         </div>
                         {/* button social media */}
-                        <div class="flex-row hidden lg:block">
+                        <div class="flex-row hidden lg:block lg:ml-[30px] lg:mr-5">
                             <button class="mx-2">
                                 <img src="/src/assets/Button Footer Play Now.png" alt="" />
                             </button>
