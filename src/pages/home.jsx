@@ -18,9 +18,12 @@ export default function Home() {
             <div class="text-5xl flext text-center pt-20">
                 Home page
             </div>
+            {user && 
             <div class="flex justify-center">
                 Welcome, {user.name}
             </div>
+
+            }
             {/* login */}
             <div class="flex justify-center mt-20">
                 <div class="mx-5">
