@@ -19,10 +19,9 @@ export default function Home() {
                 Home page
             </div>
             {user && 
-            <div class="flex justify-center">
+            <div class="flex justify-center m-10 text-4xl">
                 Welcome, {user.name}
             </div>
-
             }
             {/* login */}
             <div class="flex justify-center mt-20">
