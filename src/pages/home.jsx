@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 
 export default function Home() {
     const navigate = useNavigate();
+    const user = JSON.parse(localStorage.getItem('user'))
 
     const handleRegisterClick = () => {
         // Use the navigate function to move to the Register page
@@ -16,6 +17,9 @@ export default function Home() {
             {/* Body */}
             <div class="text-5xl flext text-center pt-20">
                 Home page
+            </div>
+            <div class="flex justify-center">
+                Welcome, {user.name}
             </div>
             {/* login */}
             <div class="flex justify-center mt-20">

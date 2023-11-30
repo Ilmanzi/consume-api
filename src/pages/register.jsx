@@ -10,6 +10,7 @@ function Register() {
   const [email, setEmail] = useState('')
   const [name, setName] = useState('')
   const [password, setPassword] = useState('')
+  const [error, setError] = useState('')
 
   const handleRegister = async () => {
     try {
@@ -23,10 +24,17 @@ function Register() {
 
       const data = response.data;
       console.log(data)
+      
+      if (!data) {
+        setError("Registration Failed!")
+        
+      } else {
+        navigate('/login');
+      }
     } catch (error) {
       console.error(error)
+      setError('An unexpected error occurred during registration');
     }
-    navigate('/login');
   };
 
   return (

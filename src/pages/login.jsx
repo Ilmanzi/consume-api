@@ -10,15 +10,16 @@ export default function Login() {
     const handleLogin = async () => {
         try {
             const apiUrl = 'https://staging-vas-app.indofungames.com/1.0/login/users';
-
             const response = await axios.post(apiUrl, {
                 email,
                 password
             })
 
-            const data = response.data;
+            const data = response.data.data;
             console.log(data)
-
+            localStorage.setItem('user', JSON.stringify(data))
+            
+            navigate('/')
         } catch (error) {
             console.error('Error during login:', error);
         }
