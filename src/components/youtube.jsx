@@ -5,8 +5,8 @@ class YoutubeVideo extends React.Component {
     return (
       <div>
         <iframe 
-          width="286" 
-          height="181" 
+          width="320" 
+          height="201" 
           src="https://www.youtube.com/embed/3L7Q-z-RUbY" 
           frameborder="0" 
           allow="autoplay; encrypted-media" 

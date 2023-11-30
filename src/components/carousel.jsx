@@ -11,7 +11,7 @@ class CarouselContent3 extends Component {
                 : '/src/assets/Bullet Slider Off.png';
 
             return (
-                <div class="inline-block w-12">
+                <div class="inline-block w-12 lg:w-16">
                     <div class="h-56">
 
                     </div>

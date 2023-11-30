@@ -11,7 +11,7 @@ class CarouselContent extends Component {
                 : '/src/assets/Bullet Slider Off.png';
 
             return (
-                <div class="inline-block w-12">
+                <div class="inline-block w-12 lg:w-16">
                     <button onClick={onClickHandler}>
                         <img
                         class="p-1"
@@ -40,7 +40,7 @@ class CarouselContent extends Component {
                         />
                     )}
                 >
-                    <div class="pb-24">
+                    <div class="pb-24 lg:pb-28">
                         <img src="/src/assets/Slide 1.jpg" alt="" />
                     </div>
                     <div>
