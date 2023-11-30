@@ -1,9 +1,19 @@
 import CarouselContent3 from "../components/carousel"
 import YoutubeVideo from "../components/youtube"
 import CarouselContent from "../components/carousel-end"
+import React, { useState } from 'react'
+import Modal from "../components/popup"
 
 export default function LandingPage() {
+    const [isModelOpen, setModalOpen] = useState(false);
 
+    const openModal = () => {
+        setModalOpen(true)
+    }
+
+    const closeModal = () => {
+        setModalOpen(false)
+    }
     return (
         <>
             {/* Body */}
@@ -40,10 +50,10 @@ export default function LandingPage() {
                             </div>
                             {/* gift button */}
                             <div class="relative">
-                                <img class="w-[180px] h-[65px] m-8" src="/src/assets/Button Gift Code.png"></img>
-                                <a>
-                                    <div class="merriweather-text absolute left-16 top-[52px] text-[#d8ae2f] shadow">Free Gift Code!!</div>
-                                </a>
+                                <button onClick={openModal}>
+                                    <img class="w-[180px] h-[65px] lg:w-[240px] lg:h-[80px] m-8" src="/src/assets/Button Gift Code.png"></img>
+                                    <div class="merriweather-text absolute left-16 top-[52px] text-[#d8ae2f] shadow lg:left-[75px] lg:text-xl lg:top-[58px]">Free Gift Code!!</div>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -70,7 +80,7 @@ export default function LandingPage() {
                 {/* contain 3 */}
                 <div class="bg-cover bg-center h-[896px] z-0" style={{ backgroundImage: 'url("src/assets/Background Section 3.jpg")' }}>
                     {/* text */}
-                    <div class="text-right text-5xl pt-20 metalmania-text text-white tracking-widest mr-7">
+                    <div class="text-right lg:text-center lg:pt-[100px] text-5xl pt-20 metalmania-text text-white tracking-widest mr-7">
                         Character Class
                     </div>
                     <div>
@@ -127,6 +137,65 @@ export default function LandingPage() {
                         </div>
                     </div>
                 </div>
+                {/* modal pop up free gift */}
+                <Modal isOpen={isModelOpen} onClose={closeModal}>
+                    {/* background */}
+                    <div class="merriweather-text text-center text-md bg-cover bg-center" style={{ backgroundImage: 'url("src/assets/Background Pop Up.jpg")' }}>
+                        {/* modal contents */}
+                        <div class="text-white pt-5">
+                            Copy these gift code and redeem in your profile
+                        </div>
+                        {/* 1st coupun */}
+                        <div class="relative mt-10 flex flex-col items-center">
+                            <a>
+                                <img class="w-[70x] h-[70px]" src="/src/assets/Button Gift Code.png" ></img>
+                                <div class="absolute top-[22px] left-[170px] lg:left-[235px] text-[#d8ae2f] shadow">ILWELCOME</div>
+                            </a>
+                        </div>
+                        <div class="flex flex-row mt-3 justify-center">
+                            <img class="w-[120px] mx-1" src="/src/assets/item/Silver.png" alt="" />
+                            <img class="w-[120px] mx-1" src="/src/assets/item/Golden Scroll.png" alt="" />
+                            <img class="w-[120px] mx-1" src="/src/assets/item/1.5X Exp Potion.png" alt="" />
+                        </div>
+                        {/* 2nd coupon */}
+                        <div class="relative mt-10 flex flex-col items-center">
+                            <a>
+                                <img class="w-[70x] h-[70px]" src="/src/assets/Button Gift Code.png" ></img>
+                                <div class="absolute top-[22px] left-[190px] lg:left-[255px] text-[#d8ae2f] shadow">ILHERO</div>
+                            </a>
+                        </div>
+                        <div class="flex flex-row flex-wrap mt-3 justify-center">
+                            <img class="w-[120px] mx-1" src="/src/assets/item/Lv.2 Attack Gem.png" alt="" />
+                            <img class="w-[120px] mx-1" src="/src/assets/item/Silver2.png" alt="" />
+                            <img class="w-[120px] mx-1" src="/src/assets/item/Secret Code of the Abyss.png" alt="" />
+                            <img class="w-[120px] mx-1 mt-2" src="/src/assets/item/Treasure Vault Key.png" alt="" />
+                        </div>
+                        {/* 3rd coupon */}
+                        <div class="relative mt-10 flex flex-col items-center">
+                            <a>
+                                <img class="w-[70x] h-[70px]" src="/src/assets/Button Gift Code.png" ></img>
+                                <div class="absolute top-[22px] left-[170px] lg:left-[235px] text-[#d8ae2f] shadow">ILIMMORTAL</div>
+                            </a>
+                        </div>
+                        <div class="flex flex-row flex-wrap mt-3 justify-center">
+                            <img class="w-[120px] mx-1" src="/src/assets/item/Lv.3 Attack Gem.png" alt="" />
+                            <img class="w-[120px] mx-1" src="/src/assets/item/Red Equipment Optional.png" alt="" />
+                            <img class="w-[120px] mx-1" src="/src/assets/item/3X Exp Potion.png" alt="" />
+                        </div>
+                        {/* 4th coupon */}
+                        <div class="relative mt-10 flex flex-col items-center">
+                            <a>
+                                <img class="w-[70x] h-[70px]" src="/src/assets/Button Gift Code.png" ></img>
+                                <div class="absolute top-[22px] left-[200px] lg:left-[265px] text-[#d8ae2f] shadow">ILGOD</div>
+                            </a>
+                        </div>
+                        <div class="flex flex-row flex-wrap mt-3 justify-center pb-5">
+                            <img class="w-[120px] mx-1" src="/src/assets/item/Personal Name Change Card.png" alt="" />
+                            <img class="w-[120px] mx-1" src="/src/assets/item/Golden Hammer.png" alt="" />
+                            <img class="w-[120px] mx-1" src="/src/assets/item/Order-Spirit.png" alt="" />
+                        </div>
+                    </div>
+                </Modal>
             </div>
         </>
     )
