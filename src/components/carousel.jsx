@@ -7,8 +7,8 @@ class CarouselContent3 extends Component {
     render() {
         const CustomIndicator = ({ isSelected, onClickHandler }) => {
             const indicatorImage = isSelected
-                ? '/src/assets/Bullet Slider On.png'
-                : '/src/assets/Bullet Slider Off.png';
+                ? '/assets/Bullet Slider On.png'
+                : '/assets/Bullet Slider Off.png';
 
             return (
                 <div class="inline-block w-12 lg:w-16">
@@ -44,7 +44,7 @@ class CarouselContent3 extends Component {
                     <div class="pb-20">
                         {/* Char blood blade */}
                         <div class="w-[400px] h-[300px] mx-auto">
-                            <img class="h-[350px]" src="/src/assets/Char Blood Blade.gif" />
+                            <img class="h-[350px]" src="/assets/Char Blood Blade.gif" />
                         </div>
                         <div class="text-white bg-black bg-opacity-75 merriweather-text mt-10 m-8 p-3">
                             <div class="text-4xl m-2">Blood Blade</div>
@@ -55,7 +55,7 @@ class CarouselContent3 extends Component {
                     <div>
                         {/* char immortal sword */}
                         <div class="w-[300px] h-[300px] mx-auto">
-                            <img class="h-[350px]" src="/src/assets/Char Immortal Sword.gif" alt="" />
+                            <img class="h-[350px]" src="/assets/Char Immortal Sword.gif" alt="" />
                         </div>
                         <div class="text-white bg-black bg-opacity-75 merriweather-text mt-10 m-8 p-3" >
                             <div class="text-4xl m-2">Immortal Sword</div>
@@ -66,7 +66,7 @@ class CarouselContent3 extends Component {
                     <div>
                         {/* char dragon spear */}
                         <div class="w-[200px] h-[300px] mx-auto relative items-center">
-                            <img class="relative z-1 h-[400px]" src="/src/assets/Char Dragon Spear.gif" alt="" />
+                            <img class="relative z-1 h-[400px]" src="/assets/Char Dragon Spear.gif" alt="" />
                         </div>
                         <div class="relative z-2 text-white bg-black bg-opacity-75 merriweather-text mt-10 m-8 p-3">
                             <div class="text-4xl m-2">Dragon Spear</div>
@@ -77,7 +77,7 @@ class CarouselContent3 extends Component {
                     <div>
                         {/* char divine talisman */}
                         <div class="w-[280px] h-[300px] mx-auto">
-                            <img class="relative z-0 h-[370px]" src="/src/assets/Char Divine Talisman.gif" alt="" />
+                            <img class="relative z-0 h-[370px]" src="/assets/Char Divine Talisman.gif" alt="" />
                         </div>
                         <div class="relative z-1 text-white bg-black bg-opacity-75 merriweather-text mt-10 m-8 p-3">
                             <div class="text-4xl m-2">Divine Talisman</div>

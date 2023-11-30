@@ -7,8 +7,8 @@ class CarouselContent extends Component {
     render() {
         const CustomIndicator = ({ isSelected, onClickHandler }) => {
             const indicatorImage = isSelected
-                ? '/src/assets/Bullet Slider On.png'
-                : '/src/assets/Bullet Slider Off.png';
+                ? '/assets/Bullet Slider On.png'
+                : '/assets/Bullet Slider Off.png';
 
             return (
                 <div class="inline-block w-12 lg:w-16">
@@ -41,19 +41,19 @@ class CarouselContent extends Component {
                     )}
                 >
                     <div class="pb-24 lg:pb-28">
-                        <img src="/src/assets/Slide 1.jpg" alt="" />
+                        <img src="/assets/Slide 1.jpg" alt="" />
                     </div>
                     <div>
-                        <img src="/src/assets/Slide 2.jpg" alt="" />
+                        <img src="/assets/Slide 2.jpg" alt="" />
                     </div>
                     <div>
-                        <img src="/src/assets/Slide 3.jpg" alt="" />
+                        <img src="/assets/Slide 3.jpg" alt="" />
                     </div>
                     <div>
-                        <img src="/src/assets/Slide 4.jpg" alt="" />
+                        <img src="/assets/Slide 4.jpg" alt="" />
                     </div>
                     <div>
-                        <img src="/src/assets/Slide 5.jpg" alt="" />
+                        <img src="/assets/Slide 5.jpg" alt="" />
                     </div>
                 </Carousel>
             </div>
