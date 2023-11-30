@@ -12,6 +12,10 @@ function Register() {
   const [password, setPassword] = useState('')
   const [error, setError] = useState('')
 
+  const handleLogin = () => {
+    navigate('/login')
+  }
+
   const handleRegister = async () => {
     try {
       const apiUrl = 'https://staging-vas-app.indofungames.com/1.0/register/users/registermain'
@@ -22,10 +26,10 @@ function Register() {
         password
       })
 
-      const data = response.data;
+      const data = response.data.data;
       console.log(data)
       
-      if (!data) {
+      if (data.m) {
         setError("Registration Failed!")
         
       } else {
@@ -51,9 +55,15 @@ function Register() {
         <label class="pt-3">Password</label>
         <input value={password} onChange={(e) => setPassword(e.target.value)} type='password' class="p-2 mx-2 outline text-black"></input>
       </div>
-      <div>
-        <button onClick={handleRegister} class="flex mx-auto p-5 bg-yellow-400 mt-5 text-black">Register</button>
+      <div class="flex justify-center">
+        <button onClick={handleLogin} class="p-5 m-5 bg-gray-400 text-black w-24" >Login</button>
+        <button onClick={handleRegister} class="p-5 bg-yellow-400 m-5 w-24 text-black">Register</button>
       </div>
+      {error &&
+      <div class="flex justify-center mt-10">
+        <p>Email sudah terdaftar</p>
+      </div>
+      }
     </div>
   );
 }

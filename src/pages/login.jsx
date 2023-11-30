@@ -6,6 +6,11 @@ export default function Login() {
     const navigate = useNavigate();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [error, setError] = useState('')
+
+    const handleRegister = () => {
+        navigate('/register')
+    }
 
     const handleLogin = async () => {
         try {
@@ -17,9 +22,13 @@ export default function Login() {
 
             const data = response.data.data;
             console.log(data)
-            localStorage.setItem('user', JSON.stringify(data))
+            if (data.m) {
+                setError('Login failed')
+            } else {
+                localStorage.setItem('user', JSON.stringify(data))
+                navigate('/')
+            }
             
-            navigate('/')
         } catch (error) {
             console.error('Error during login:', error);
         }
@@ -47,11 +56,19 @@ export default function Login() {
                     className="p-2 mx-2 outline text-black"
                 />
             </div>
-            <div>
-                <button onClick={handleLogin} className="flex mx-auto p-5 bg-yellow-400 mt-5 text-black">
+            <div class="flex justify-center">
+                <button onClick={handleRegister} className=" p-5 m-5 w-24 bg-gray-400 mt-5 text-black">
+                    Register
+                </button>
+                <button onClick={handleLogin} className="p-5 m-5 w-24 bg-yellow-400 mt-5 text-black">
                     Login
                 </button>
             </div>
+            { error && 
+            <div class="flex justify-center mt-10">
+                <div>Email atau password salah!</div>
+            </div>
+            }
         </div>
     );
 }
